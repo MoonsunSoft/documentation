@@ -4,15 +4,13 @@
 :show-toc:
 
 
-=========
-راهنمای کاربری
-=========
+User Manual
+===========
 
-در این بخش مستندهای مورد نیاز برای کاربران امده است.
+In this part, you will learn how to use MoonSun TL. modules as a user.
 
 
 .. toctree::
     :maxdepth: 2
 
     applications/exchange
-    applications/iot

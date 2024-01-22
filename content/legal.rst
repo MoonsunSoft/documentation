@@ -3,7 +3,8 @@
 :custom-css: legal.css
 :orphan:
 
+Legal
 =====
-قوانین
-=====
+
+TODO: maso, 2023: adding MoonSun Legal
 

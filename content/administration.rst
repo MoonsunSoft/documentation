@@ -3,12 +3,9 @@
 :hide-page-toc:
 :show-toc:
 
-====================
-نصب و نگهداری
+Install and Maintain
 ====================
 
-
-این مستند شامل دستورالعمل‌هایی برای نصب، راه اندازی و نگهداری از ماژولهای مونسان است.
 
 .. seealso::
     :doc:`تاریخچه تغییرات <administration/maintain/supported_versions>`

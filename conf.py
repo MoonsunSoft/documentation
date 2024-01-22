@@ -467,12 +467,13 @@ def _generate_alternate_urls(app, pagename, templatename, context, doctree):
 
 
     def _build_url(_version=None, _lang=None):
-        if app.config.is_remote_build:
-            # Project root like https://www.odoo.com/documentation
-            _root = app.config.project_root
-        else:
-            # Project root like .../documentation/_build/html/14.0/fr
-            _root = re.sub(rf'(/{app.config.version})?(/{app.config.language})?$', '', app.outdir)
+        _root = app.config.project_root
+        # if app.config.is_remote_build:
+        #     # Project root like https://www.odoo.com/documentation
+        #     _root = app.config.project_root
+        # else:
+        #     # Project root like .../documentation/_build/html/14.0/fr
+        #     _root = re.sub(rf'(/{app.config.version})?(/{app.config.language})?$', '', app.outdir)
         # If the canonical version is not set, assume that the project has a single version
         _canonical_version = app.config.canonical_version or app.config.version
         _version = _version or app.config.version
