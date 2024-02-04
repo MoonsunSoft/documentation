@@ -1,0 +1,29 @@
+name: documentation
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+      - name: Install dependencies
+        run: |
+          sudo apt install nodejs
+          npm install -g rtlcss 
+          pip install -r requirements.txt
+      - name: Sphinx build
+        run: |
+          make clean; make
+          rtlcss -d _build -e .css
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/16.0' }}
+        with:
+          publish_branch: online-16.0
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _build/html
+          force_orphan: true
