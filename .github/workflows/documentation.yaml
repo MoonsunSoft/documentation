@@ -21,9 +21,9 @@ jobs:
           rtlcss -d _build -e .css
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/16.0' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/17.0' }}
         with:
-          publish_branch: online-16.0
+          publish_branch: online-17.0
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: _build/html
           force_orphan: true
