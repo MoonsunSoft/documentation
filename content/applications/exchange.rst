@@ -6,8 +6,8 @@ Moonsun Exchange is a program for managing spots in an exchange store. With the 
 The Moonsun Exchange includes Contact, Users, Spot, Accounting and report sections, which are explained in detail below.
 
 .. toctree::
-    contacts/contacts_details
-    users/users_details
-    spot/spot_details
-    accounting/accounting_details
-    reports/reports_details
+    exchange/contacts/contacts_details
+    exchange/users/users_details
+    exchange/spot/spot_details
+    exchange/accounting/accounting_details
+    exchange/reports/reports_details
