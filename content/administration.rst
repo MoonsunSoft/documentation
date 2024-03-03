@@ -8,7 +8,7 @@ Install and Maintain
 
 
 .. seealso::
-    :doc:`تاریخچه تغییرات <administration/maintain/supported_versions>`
+    :doc:`History Change <administration/maintain/supported_versions>`
 
 
 .. toctree::
