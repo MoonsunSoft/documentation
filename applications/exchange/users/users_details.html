@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="EN" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Users &#8212; MoonSun 16.0 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=4cfa33a6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/style.css?v=a908b7d2" />
+    
+    <script src="../../../_static/documentation_options.js?v=79c0efb0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/utils.js?v=ff39eecb"></script>
+    <script src="../../../_static/js/layout.js?v=1e180e17"></script>
+    <script src="../../../_static/js/menu.js?v=545d0e60"></script>
+    <script src="../../../_static/js/page_toc.js?v=6e8e6baa"></script>
+    <script src="../../../_static/js/switchers.js?v=c1563c29"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="../../../_static/favicon.ico"/>
+    <link rel="canonical" href="/applications/exchange/users/users_details.html" />
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Spot" href="../spot/spot_details.html" />
+    <link rel="prev" title="Create Contacts" href="../contacts/create_contacts/create_contacts_details.html" /> 
+  </head><body>
+    <noscript>
+        <nav class="o_side_nav border-end">
+
+
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../applications.html">User Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../exchange.html">Exchange</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html">Contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html#customer">Customer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html#beneficiary">Beneficiary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html#owner">Owner</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../contacts/create_contacts/create_contacts_details.html">Create Contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spot/spot_details.html">Spot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../spot/prerequisites/prerequisites_details.html">Prerequisites of a SPOT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../spot/create_spot/create_spot_details.html">Create SPOT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../accounting/accounting_details.html">Accounting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reports/reports_details.html">Reports</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reports/basic/basic_details.html">Basic Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reports/country/country_details.html">Country Reports</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reports/country/australia/australia_details.html">Australia Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../portal/portal_details.html">Portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dashboard/dashboard_details.html">Dashboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../website/website_details.html">Website</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../website/chart_snippet/chart_snippet_details.html">Chart snippet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../website/convert_snippet/convert_snippet_details.html">Convert Rate snippet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../administration.html">Install and Maintain</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../administration/install.html">Install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../administration/maintain.html">Maintain</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../administration/maintain/supported_versions.html">Versions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../administration/maintain/16.html">Odoo 16.0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </nav>
+    </noscript>
+    
+    <nav id="o_menu" class="o_side_nav">
+        <div class="o_mobile-overlay" data-bs-toggle="collapse" data-bs-target="#o_menu"></div>
+        <div class="o_side_nav-inner border-end">
+                
+                <aside id="o_page_toc_in_nav" class="o_page_toc o_in_nav_toc border-bottom pt-3 pb-3" hidden><div class="o_page_toc_nav mt-1">
+    <h5>On this page</h5>
+    <ul>
+<li><a class="reference internal" href="#">Users</a></li>
+</ul>
+ 
+</div>
+                </aside>
+            <div id="o_main_toctree" class="o_main_toc mt-3" hidden>
+
+
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../applications.html">User Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../exchange.html">Exchange</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html">Contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html#customer">Customer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html#beneficiary">Beneficiary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contacts/contacts_details.html#owner">Owner</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../contacts/create_contacts/create_contacts_details.html">Create Contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../spot/spot_details.html">Spot</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../spot/prerequisites/prerequisites_details.html">Prerequisites of a SPOT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../spot/create_spot/create_spot_details.html">Create SPOT</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../accounting/accounting_details.html">Accounting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../reports/reports_details.html">Reports</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../reports/basic/basic_details.html">Basic Reports</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../reports/country/country_details.html">Country Reports</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../reports/country/australia/australia_details.html">Australia Reports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../portal/portal_details.html">Portal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dashboard/dashboard_details.html">Dashboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../website/website_details.html">Website</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../website/chart_snippet/chart_snippet_details.html">Chart snippet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../website/convert_snippet/convert_snippet_details.html">Convert Rate snippet</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../administration.html">Install and Maintain</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../administration/install.html">Install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../administration/maintain.html">Maintain</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../administration/maintain/supported_versions.html">Versions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../../administration/maintain/16.html">Odoo 16.0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </nav>
+    <header class="o_headers"><div class="o_main_header border-bottom d-flex align-items-center">
+    <div class="o_logo_wrapper">
+      <a href="../../../index.html" class="o_logo">
+          <img src="../../../_static/img/logos/odoo_logo.svg" height="20" alt="Odoo"/>
+          <span>docs</span>
+      </a>
+    </div>
+    <div class="d-flex flex-grow-1">
+<div id="searchbox" class="o_search_wrapper d-flex flex-grow-1" role="search">
+    <form class="o_search" action="../../../search.html" method="get">
+        <input type="text" name="q" id="q" class="form-control rounded-pill" placeholder="What are you looking for?">
+        <input type="hidden" name="area" value="default">
+        <input type="hidden" name="check_keywords" value="yes">
+        <button type="submit" class="btn"><i class="i-search"></i></button>
+    </form>
+</div>
+<script type="text/javascript">$('.o_search_wrapper').show(0);</script>
+        <a class="btn btn-primary fw_bold ms-auto d-none d-lg-inline-block" href="https://odoo.com/trial">Try Odoo for FREE</a>
+    </div>
+</div>
+<div class="o_subheader border-bottom d-flex">
+    <div class="o_side_nav_toggler_wrapper border-end d-flex d-lg-none">
+        <button class="h-100 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#o_menu" aria-label="Toggle navigation">
+            <i class="i-sidepanel"></i>
+        </button>
+    </div>
+    <div class="d-flex justify-content-end ms-auto"><div class="o_languages">
+	<div class="dropdown">
+            <button class="btn btn-sm dropdown-toggle"
+                    id="languages"
+                    disabled="">
+                EN 
+            </button>
+        <ul class="dropdown-menu" aria-labelledby="languages">
+        </ul>
+	</div>
+</div><div class="o_versions row">
+    <div class="dropdown">
+            <button class="btn btn-sm dropdown-toggle"
+                    id="versions"
+                    disabled="">
+                Odoo 16 
+            </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="versions">
+        </ul>
+    </div>
+</div>
+    </div>
+</div>
+    </header>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../spot/spot_details.html" title="Spot"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../contacts/create_contacts/create_contacts_details.html" title="Create Contacts"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">MoonSun 16.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../applications.html" >User Manual</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../exchange.html" accesskey="U">Exchange</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Users</a></li> 
+      </ul>
+    </div>
+    <div id="wrap">
+
+        <main class="container-fluid ">
+                <article id="o_content" class="doc-body">
+                    <div role="main"> 
+  <section id="users">
+<h1>Users<a class="headerlink" href="#users" title="Link to this heading">¶</a></h1>
+<p>Users in Moonsun Exchange include employees and managers of an exchange store.</p>
+<p>The level of access of employees in Moonsun Exchange is different and you can apply different access to different characters of your store.</p>
+</section>
+
+                    </div>
+                </article>
+        </main>
+            
+            <aside id="o_page_toc" class="o_page_toc" hidden><div class="o_page_toc_nav mt-1">
+    <h5>On this page</h5>
+    <ul>
+<li><a class="reference internal" href="#">Users</a></li>
+</ul>
+ 
+</div>
+            </aside>
+    </div>
+    <footer><div class="o_get_help container-fluid d-lg-flex">
+    <div class="col-12 col-lg-10">
+        <h4><i class="i-o-help me-2"></i>Get Help</h4>
+        <div>
+            <a href="https://odoo.com/help" target="_blank" class="btn btn-outline-secondary mb-2">Contact Support</a>
+            <a href="https://www.odoo.com/forum/help-1" target="_blank" class="btn btn-outline-secondary mb-2">Ask the Odoo Community</a>
+        </div>
+    </div>
+    <div class="col-12 col-lg-2 mt-5 mt-lg-0 text-center">
+        <a class="o_logo" href="https://www.odoo.com">
+            <img src="../../../_static/img/logos/odoo_logo.svg" height="20" alt="Odoo"/>
+        </a>
+    </div>
+</div>
+    </footer>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../spot/spot_details.html" title="Spot"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../contacts/create_contacts/create_contacts_details.html" title="Create Contacts"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">MoonSun 16.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../applications.html" >User Manual</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../exchange.html" >Exchange</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Users</a></li> 
+      </ul>
+    </div>
+  </body>
+</html>
