@@ -13,5 +13,7 @@ The Moonsun Exchange includes Contact, Users, Spot, Accounting and report sectio
     exchange/reports/reports_details
     exchange/portal/portal_details
     exchange/dashboard/dashboard_details
+    exchange/website/website_details
+
 
 
